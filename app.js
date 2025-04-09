@@ -118,14 +118,14 @@ const gameController = (() => {
                 );
         };
         const getEmptyIndexes = (board) => {
-            return board.filter(i => i !=== "O" && i !=== "X")
+            return board.filter(i => i != "O" && i != "X")
         }
 
         const reset = () => {
             isOver = false;
             round = 1;
         }
-    return {playRound, getCurrentPlayerShape, getIsOver,getEmptyIndexes, reset}
+    return {playRound, getCurrentPlayerShape, getIsOver,getEmptyIndexes/*possibly remove if not used outside of gamecontroller */, reset}
 })();
 
 
